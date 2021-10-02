@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:3% ;
+}
+#nav{
+    background: linear-gradient(90deg, rgba(255,255,255,0.9223039557619923) 0%, rgba(74,74,74,0.8970938717283788) 74%, rgba(14,0,0,0.9363095580028886) 100%);
+}
+#logo{
+    width: 180px;
+}
+#card{
+    background-color: rgba(14, 0, 0, 0.459);
+}
+#card-header{
+    background-color: rgba(14, 0, 0, 0.678);
+}
+.icon1{
+    width: 45px;
+}
+#logo2{
+    width: 268px;
+    filter: invert(80%);
+    -webkit-filter: invert(22.1%);
+    margin-left: 50px ;
+    margin-top: 20px;
+}
+[type=radio]:checked + img {
+  outline: 2px solid #f00;
+  cursor:pointer; 
+}
+[type=radio] + img {
+  cursor:pointer; 
+}
+#conVector{
+    height: 400px;
+}
+#conVector::-webkit-scrollbar {
+    display: none;  
+}
+
+#carddark{
+   background-color: rgba(14, 0, 0, 0.459);
+   transform: translate3d(0, 0, 0);
+}
+#cardlight{
+   background-color: rgba(255,255,255,0.459);
+   color: black;
+}
+#cardlight #card-header{
+    background-color: rgba(255,255,255,0.659);
+    color: black;
+}
+#cardlight p{
+    color: black;
+}
+#icon{
+    width: 10%;
+}
+#cardAnimation{
+   transform: translate3d(0, 0, 0);
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+#cardAnimation div{
+   background-color: rgba(37, 0, 0, 0.459);
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(6px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-8px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(8px, 0, 0);
+  }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WizardWorld</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <link href="./assets/index.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-sm-top" id="nav">
+    <div class="container-fluid">
+      <img class="navbar-brand" id="logo" src="./assets/img/logoModelos.png" href="#">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ElegirPersonaje.jsp">Batalla</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Personaje
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="CrearPersonaje.jsp">Crear personaje</a></li>
+              <li><a class="dropdown-item" href="crearHechizo.jsp">Crear hechizo</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="ligarHechizosAPersonaje.jsp">Equipar Hechizos</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" id="contenedor">
+    <div class="row">
+      <div class="col-sm">
+        <div class="card text-white border-dark mb-3 mt-2 mx-auto" id="card" style="max-width: 18rem;">
+          <div class="card-header border-dark" id="card-header">Crea tu propio campeon</div>
+          <div class="card-body">
+            <h5 class="card-title">Personaliza</h5>
+            <p class="card-text">Personaliza tu personaje como desees.</p>
+          </div>
+          <div class="card-footer">
+            <img class="icon1"src="./assets/img/king.png">
+            <img class="icon1"src="./assets/img/knight.png">
+            <img class="icon1"src="./assets/img/witch.png">
+            <img class="icon1"src="./assets/img/hada.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="card text-white border-dark mb-3 mt-2 mx-auto" id="card" style="max-width: 18rem;">
+          <div class="card-header border-dark" id="card-header">actualizacion 1.0000001</div>
+          <div class="card-body">
+            <h5 class="card-title">prueba el nuevo y unico modo de batalla</h5>
+            <p class="card-text">Modo de batalla PVP por turnos, donde podras elegir entre los diferentes campeones.</p>
+          </div>
+          <div class="card-footer">
+            <img class="icon1"src="./assets/img/swords.png">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <img src="./assets/img/logo2.png"id="logo2">
+      </div>
+      <div class="col-sm">
+        <div class="card text-white border-dark mb-3 mt-2 mx-auto " id="card" style="max-width: 18rem;">
+          <img src="https://as.com/epik/imagenes/2020/05/14/portada/1589472515_970977_1589472560_noticia_normal.jpg" class="card-img-top w-75 mx-auto" >
+          <div class="card-header border-dark" id="card-header">Comunidad</div>
+          <div class="card-body">
+            <h5 class="card-title">Actual campeón</h5>
+            <p class="card-text">Jacinto despues de incontables batallas en nuestro primer torneo se corono como campeon indiscutible.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="card text-white border-dark  mb-3 mt-2 mx-auto" id="card" style="max-width: 18rem;">
+          <div class="card-header  border-dark" id="card-header">Hechizos</div>
+          <div class="card-body">
+            <h5 class="card-title">Variedad de hechizos</h5>
+            <p class="card-text">Explora <b class="text-decoration-line-through">cientos de</b> diferentes hechizos con efectos unicos.</p>
+          </div>
+          <div class="card-footer">
+            <img class="icon1"src="./assets/img/book.svg">
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+<footer>
+    <p class="text-center text-white bold">
+       <b class="text-decoration-line-through">Yu-Gi-Oh!®</b> digo Wizard World® es una marca registrada de la Fundación NoSeNosOcurrioNadaMejor, Inc., una organización sin lucro :'(
+    </p>
+</footer>
+</html>
